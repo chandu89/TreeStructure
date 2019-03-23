@@ -14,7 +14,7 @@ Above URL will return data based on requirment.
 
 [Deployed HEROKU URL](https://thawing-ravine-34399.herokuapp.com/1)
 
-All the time TREE_URI was fetching data with tree id=1 so. Its quite expected you'll get a result of - There is no tree with this tree id. Other than tree_id=1.
+Always I was getting id 1 with **TREE_URI** provided in requirement So. Its quite normal you'll get a result of **There is no tree with this tree id**. other than tree_id=1.
 ## Testing
 Test by running rspec http://rspec.info/ 
 > $ rspec spec/*.rb
