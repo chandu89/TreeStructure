@@ -23,6 +23,8 @@ with coverage COVERAGE=true rspec spec/*.rb
 
 Finished in 4.46 seconds (files took 1.1 seconds to load)
 6 examples, 0 failures
+
+100% coverage: coverage/index.html
 ***
 
 ## What I have used 
