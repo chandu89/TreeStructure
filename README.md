@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It consume the data from the given ENV['TREE_URI'] and process based Ancestry module. 
 
-Things you may want to cover:
+* HTTP GET /:tree_id
+=> Return the saved structure
+* HTTP GET /:tree_id/parent/:id
+=> Return the list of parents IDs
+* HTTP GET /:tree_id/child/:id
+=> Return the list of childs
+***
 
-* Ruby version
+Above URL will return data based on requirment.
 
-* System dependencies
+[Deployed HEROKU URL](https://thawing-ravine-34399.herokuapp.com/1)
 
-* Configuration
+## Testing
+Test by running rspec http://rspec.info/ 
+> $ rspec spec/*.rb
+with coverage COVERAGE=true rspec spec/*.rb
+......
 
-* Database creation
+Finished in 4.46 seconds (files took 1.1 seconds to load)
+6 examples, 0 failures
+***
 
-* Database initialization
+## What I have used 
 
-* How to run the test suite
+- For debugging Pry gem
+- For test Case rspec
+- For coverage simplecov
+- For HTTP request Faraday gem
+- Under Production env PG gem but for devlopment mysql(optional)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Can be implemented
 
-* Deployment instructions
+- Ansestry gem for better result
+- Caching can implemented but Heroku free hosting it was diff.
+- FactoryGirl Can be implemented.
+- I was not sure with parentIDs so i have returned full.
 
-* ...
+
+
+### Please take a look for Ansestry module for depth.
