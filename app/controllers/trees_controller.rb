@@ -22,7 +22,7 @@ class TreesController < ApplicationController
   def fetch_or_create_tree
   	tree = Tree.fetch_tree(params[:tree_id]).first
   	unless tree.present?
-  		response_tree = JSON.parse(Faraday.get('https://random-tree.herokuapp.com/').body)
+  		response_tree = JSON.parse(Faraday.get(ENV["TREE_URI"]).body)
   		begin
       	tree = Tree.create(response_tree)
       	raise ActiveRecord::RecordNotFound unless tree.id == params[:tree_id]
