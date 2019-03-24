@@ -40,7 +40,7 @@ Finished in 4.46 seconds (files took 1.1 seconds to load)
 - Ansestry gem for better result
 - Caching can implemented but Heroku free hosting it was diff.
 - FactoryGirl Can be implemented.
-- **I was not sure with parentIDs so i have returned full.
+- **I was not sure with parentIDs so i have returned full.**
 - CI/CD tools can be implemented, Jenkins and docker by integrating github master merge using script(Job) triggering technique.
 
 
